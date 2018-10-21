@@ -1,6 +1,6 @@
 /*
   Theme Name: Triangle
-  Theme Uri: http://designscrazed.org/
+  Theme Uri: http://designscrazed.org//
   Author: Allie
   Author Uri: http://designscrazed.org/
   Description: Creative Site Template
@@ -23,7 +23,6 @@
   html {
     height: 100%;
   }
-
 
   a{
     color:#C03035;
@@ -170,7 +169,7 @@
   padding: 30px 0 60px 0;
 }
 
-#header .navbar-inverse .container{
+#header .navbar-inverse .container {
   position: relative;
 }
 
@@ -533,8 +532,34 @@ ul.sub-menu {
 *******Home Page******
 **************************/
 #home-slider {
-  background: url(../images/home/slider-bg.png) 0 100% repeat-x;
+  background: url(../images/home/slider-bg2.jpg) -140px 100% no-repeat;
+  background-position: center;
   position: relative;
+  min-height: 250px;
+  z-index: 0;
+  height: 284px;
+}
+
+@media screen and (min-width: 752px) {
+  #home-slider {
+    height: 390px;
+  }
+}
+
+@media screen and (min-width: 752px) and (max-width: 1182px) {
+  #home-slider {
+    height: 390px;
+  }
+}
+
+@media screen and (min-width: 1182px) {
+  #home-slider {
+    height: 390px;
+  }
+}
+
+#home-slider .btn-common {
+  margin-top: 20px;
 }
 
 #home-slider .main-slider {
@@ -547,6 +572,7 @@ ul.sub-menu {
   top: 50px;
   left: 0;
   width: 450px;
+  margin: 20px;
 }
 
 .animate-in .slide-text {
@@ -569,6 +595,19 @@ ul.sub-menu {
   position: absolute;
   right: 110px;
   bottom: -30px;
+}
+
+.logo-cluster {
+  position: absolute;
+  top: 275px;
+  right: 10px;
+  /* transform: scale(0.8); */
+}
+
+@media (min-width: 975px) {
+  .logo-cluster {
+    transform: scale(0.8);
+  }
 }
 
 .animate-in .slider-house {
@@ -607,16 +646,6 @@ ul.sub-menu {
 .animate-in .slider-birds2 {
   -webkit-animation: fadeInRight 500ms ease-in-out 1200ms both;
   animation: fadeInRight 500ms ease-in-out 1200ms both;
-}
-
-
-#home-slider h1{
-  margin-top: 100px;
-  margin-bottom: 25px;
-}
-
-#home-slider .btn-common {
-  margin-top: 20px;
 }
 
 #home-slider .preloader {
@@ -1226,6 +1255,11 @@ Portfolio with right sidebar
 
 .sidebar-item{
   margin-bottom: 48px;
+}
+
+.navbar-header {
+  position: relative;
+  z-index: 10;
 }
 
 .categories .navbar-stacked li {
