@@ -1,0 +1,62 @@
+\hypertarget{class___1_1_t_binary}{}\section{\+\_\+\+:\+:T\+Binary$<$ Float, UI $>$ Class Template Reference}
+\label{class___1_1_t_binary}\index{\+\_\+\+::\+T\+Binary$<$ Float, U\+I $>$@{\+\_\+\+::\+T\+Binary$<$ Float, U\+I $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_af5a08d4a78e453bf384ff85e4aac2118}\label{class___1_1_t_binary_af5a08d4a78e453bf384ff85e4aac2118}} 
+enum \{ \newline
+{\bfseries k\+Size} = sizeof(Float), 
+{\bfseries k\+Size\+Bits} = k\+Size $\ast$ 8, 
+{\bfseries k\+M\+Sb\+Index} = k\+Size\+Bits -\/ 1, 
+{\bfseries k\+String\+Length\+Max} = 24, 
+\newline
+{\bfseries k\+Exponent\+Size\+Bits}, 
+{\bfseries k\+Coefficient\+Size} = k\+Size\+Bits -\/ k\+Exponent\+Size\+Bits -\/ 1, 
+{\bfseries k\+Mantissa\+Size} = k\+Size\+Bits -\/ k\+Exponent\+Size\+Bits -\/ 2, 
+{\bfseries k\+Exponent\+Mask\+Unshifted} = ($\sim$((UI)0)) $>$$>$ (k\+Size\+Bits -\/ k\+Exponent\+Size\+Bits), 
+\newline
+{\bfseries k\+Exponent\+Bias} = k\+Exponent\+Mask\+Unshifted + k\+Coefficient\+Size, 
+{\bfseries k\+Exponent\+Min} = -\/k\+Exponent\+Bias
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_a55a35e15c413d2f9db4e6c454e39c8c4}\label{class___1_1_t_binary_a55a35e15c413d2f9db4e6c454e39c8c4}} 
+{\bfseries T\+Binary} (Float binary)
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_a2344024a8ad45fc1894de16bebcda229}\label{class___1_1_t_binary_a2344024a8ad45fc1894de16bebcda229}} 
+{\bfseries T\+Binary} (UI f, S\+I4 e)
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_a8198a43d80a948ba714c9730aef78983}\label{class___1_1_t_binary_a8198a43d80a948ba714c9730aef78983}} 
+{\bfseries T\+Binary} (const \mbox{\hyperlink{class___1_1_t_binary}{T\+Binary}} a, const \mbox{\hyperlink{class___1_1_t_binary}{T\+Binary}} b)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_a5381e4c8503392d8b67f1d508015885d}\label{class___1_1_t_binary_a5381e4c8503392d8b67f1d508015885d}} 
+static int {\bfseries Foo} ()
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_a01666dd15a7d07d967d284539e454c36}\label{class___1_1_t_binary_a01666dd15a7d07d967d284539e454c36}} 
+static UI {\bfseries Coefficient} (UI decimal)
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_a0bfe64689496f819502cb921aa73facf}\label{class___1_1_t_binary_a0bfe64689496f819502cb921aa73facf}} 
+static UI {\bfseries Exponent} (UI decimal)
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_afaa6d73364479f2a85260196f37da5e0}\label{class___1_1_t_binary_afaa6d73364479f2a85260196f37da5e0}} 
+{\footnotesize template$<$typename Char  = char$>$ }\\static Char $\ast$ {\bfseries Print} (Char $\ast$buffer, Char $\ast$end, Float value)
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_a600b913209ca4b431719fa5c236edf12}\label{class___1_1_t_binary_a600b913209ca4b431719fa5c236edf12}} 
+{\footnotesize template$<$typename UI  = U\+IW$>$ }\\static UI {\bfseries Na\+N\+Unsigned} ()
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_ac639e4f36586dfab6817a0129f319e12}\label{class___1_1_t_binary_ac639e4f36586dfab6817a0129f319e12}} 
+{\footnotesize template$<$typename SI , typename UI $>$ }\\static SI {\bfseries T\+Na\+N\+Signed} ()
+\item 
+\mbox{\Hypertarget{class___1_1_t_binary_a6560a784914abf79600196c975df0d95}\label{class___1_1_t_binary_a6560a784914abf79600196c975df0d95}} 
+static \mbox{\hyperlink{class___1_1_t_binary}{T\+Binary}} {\bfseries I\+E\+E\+E754\+Pow10} (S\+I4 e, S\+I4 \&k)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tbinary.\+h\end{DoxyCompactItemize}
