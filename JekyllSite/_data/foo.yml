@@ -1,0 +1,14 @@
+---
+---
+
+Foo is a bar.
+
+- title: A
+  folder: a
+  content: 'Item A.'
+- title: B
+  folder: b
+  content: 'Item B.'
+- title: C
+  folder: c
+  content: 'Item C.'

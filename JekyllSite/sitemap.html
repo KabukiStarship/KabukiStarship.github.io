@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<h1>Sitemap</h1>
+
+<ul>
+  {% for page in site.pages %}
+    {% if page.type == page %}
+      <li>
+        {{page.title}}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

@@ -12,7 +12,7 @@
 
 ### Completing Issues
 
-**1.** Clone the repo and create a branch for the IssueNuber:
+**1.** Clone the repo and create a branch for the IssueNumber:
 
 ```Console
 git clone https://github.com/abc_org/xyz_project.git
@@ -40,3 +40,9 @@ git add --all
 git commit "module_id:Fix feature ABC. #125"
 git branch -d Issue123
 ```
+
+## License
+
+Copyright © 2020 [Kabuki Starship](https://kabukistarship.com).
+
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <https://mozilla.org/MPL/2.0/>.
