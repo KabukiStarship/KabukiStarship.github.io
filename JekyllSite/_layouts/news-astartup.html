@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<h1>Astartup News</h1>
+<nav>
+  <ul>
+    {% for update in site.categories.astartup-news %}
+      <li><a href="{{update.url}}">{{update.title}}</a></li>
+      <li>{{news.meta}}</li>
+    {% endfor %}
+  </ul>
+</nav>
+{{content}}

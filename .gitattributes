@@ -1,3 +1,4 @@
+## 9/11/2019
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
@@ -8,7 +9,7 @@
 #
 # This is need for earlier builds of msysgit that does not have it on by
 # default for csharp files.
-# Note: This is only used by command line
+# Note: This is only used by command line.
 ###############################################################################
 #*.cs     diff=csharp
 
